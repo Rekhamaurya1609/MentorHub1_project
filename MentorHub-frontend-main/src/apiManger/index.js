@@ -11,7 +11,7 @@ let AxiosInstances; // Declare a variable to hold the axios instance
 (() => {
   // Create an axios instance with a base URL
   AxiosInstances = axios.create({
-    baseURL: "https://mentorhub1-project-mentorhub-backend-main.onrender.com",
+    baseURL: "http://localhost:5000/v1",
   });
 
   // Add a request interceptor to include the token in the headers
