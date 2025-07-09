@@ -12,11 +12,7 @@ const config = require("./config");
 const { notFound, errorHandler } = require("./middleware/error");
 
 // Middleware to enable CORS (Cross-Origin Resource Sharing)
-app.use(cors({
-  origin:
-    'https://mentorhub1-project-mentorhub-frontend.onrender.com',
-  credentials: true
-}));
+app.use(cors());
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
